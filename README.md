@@ -2,6 +2,10 @@ Paire-Noël
 ==========
 _A random draw tool of "who makes a gift to whom?"_
 
+## Screenshot!
+
+![Screenshot](screenshot.png)
+
 ## Motivation
 Christmas is coming!
 
