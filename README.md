@@ -12,6 +12,10 @@ Data is only stored in your browser's cache.
 Query argument may be added to URL after '?':
 - data=JSON_file_URL : a correctly formated json file, have a look a the console to see how it works...
 
+## Programming langages
+Everything is written in HTML/CSS/JavaScript except the shuffle-work which is written in python and converted with [Transcrypt](https://github.com/qquick/Transcrypt).
+
+
 ## License
 _Paire-Noël_ is licensed under the [MIT License](LICENSE). Distribute and modify at will!
 
