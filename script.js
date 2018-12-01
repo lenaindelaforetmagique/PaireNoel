@@ -141,8 +141,8 @@ export var ajoutLienBtn = function() {
 }
 
 var showHat = function(hat) {
-  showResult(hat);
   showPersons(hat);
+  showResult(hat);
   showLists(hat);
   saveHistory();
 }

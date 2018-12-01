@@ -46,20 +46,25 @@ class Hat():
         res = True
         for i, p in enumerate(self.persons):
             res = res and p.check(self.persons[perm[i]])
-            if opt2cycle:
-                res = res and (p.name != self.persons[perm[i]].name)
+            if opt2cycle and (i == perm[perm[i]]):
+                res = False
         return res
 
     def findPerm(self, opt2cycle=False):
         t = [i for i in range(len(self.persons))]
-        while not self.testPerm(t, opt2cycle):
+        cpt = 0
+        while cpt < 10000 and (not self.testPerm(t, opt2cycle)):
             shuffle(t)
-        self.persons2 = [self.persons[i] for i in t]
+            cpt += 1
+        if cpt < 10000:
+            self.persons2 = [self.persons[i] for i in t]
+        else:
+            self.persons2 = []
 
     def resultLines(self):
         t = []
         for i in range(len(self.persons2)):
-            t.append(self.persons[i].name +
-                    " doit faire un cadeau à " +
-                     self.persons2[i].name)
+            t.append(self.persons[i].name
+                    + " doit faire un cadeau à "
+                     + self.persons2[i].name)
         return t
