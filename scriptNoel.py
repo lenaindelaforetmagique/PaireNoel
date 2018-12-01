@@ -42,15 +42,17 @@ class Hat():
         self.persons[i].addLink(self.persons[j])
         self.persons2 = []
 
-    def testPerm(self, perm):
+    def testPerm(self, perm, opt2cycle):
         res = True
         for i, p in enumerate(self.persons):
             res = res and p.check(self.persons[perm[i]])
+            if opt2cycle:
+                res = res and (p.name != self.persons[perm[i]].name)
         return res
 
-    def findPerm(self):
+    def findPerm(self, opt2cycle=False):
         t = [i for i in range(len(self.persons))]
-        while not self.testPerm(t):
+        while not self.testPerm(t, opt2cycle):
             shuffle(t)
         self.persons2 = [self.persons[i] for i in t]
 

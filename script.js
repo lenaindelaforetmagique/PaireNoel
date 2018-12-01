@@ -111,7 +111,7 @@ var playHistory = function(hist) {
 // Button functions
 ///////////////////
 export var tirageBtn = function() {
-  hat.findPerm()
+  hat.findPerm(document.getElementById("2-cycle").checked);
   showHat(hat);
 }
 
