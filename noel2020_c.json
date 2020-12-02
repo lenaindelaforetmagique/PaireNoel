@@ -1,0 +1,12 @@
+[
+  ["addP", "Thomas"],
+  ["addP", "Timothée"],
+  ["addP", "Marie-Astrid"],
+  ["addP", "Bruno"],
+  ["addP", "Xavier"],
+  ["addL", 2, 4],
+  ["addL", 0, 3],
+  ["addL", 1, 0],
+  ["addL", 2, 1],
+  ["addL", 3, 2],
+]
