@@ -5,6 +5,7 @@
   ["addP", "Bruno"],
   ["addP", "Xavier"],
   ["addL", 2, 4],
+  ["addL", 4, 2],
   ["addL", 0, 3],
   ["addL", 1, 0],
   ["addL", 2, 1],
